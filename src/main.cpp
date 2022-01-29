@@ -7,7 +7,7 @@ void b10()
 {
     using std::cin, std::cout;
 
-    cout << "Enter the numbers, seperating them with a line or a space."
+    cout << "Enter the numbers, seperating them with a line or a space. "
               << "Enter '0' to indicate that you are done.\n";
     std::vector<char> chars;
 
@@ -31,7 +31,7 @@ void b2()
 {
     using std::cin, std::cout;
 
-    cout << "Enter the numbers, seperating them with a line or a space."
+    cout << "Enter the numbers, seperating them with a line or a space. "
               << "Enter '2' to indicate that you are done.\n";
     std::vector<char> chars;
 
@@ -93,15 +93,15 @@ int main()
 
     transform(input.begin(), input.end(), input.begin(), ::tolower);
 
-    if (input == "b")
+    if (input == "b" || input == "2")
         b2();
-    else if (input == "o")
+    else if (input == "o" || input == "8")
         b8();
-    else if (input == "d")
+    else if (input == "d" || input == "10")
         b10();
-    else if (input == "h")
+    else if (input == "h" || input == "16")
         b16();
-    //else if (input == "b64")
+    //else if (input == "b64" || input == "64")
     //b64();
     else
         cout << "Invalid input. Shutting down...";
