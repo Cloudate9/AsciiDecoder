@@ -86,7 +86,7 @@ int main()
     cout << "O: Base 8 (Octal) to letters.\n";
     cout << "D: Base 10 (Decimal) to letters.\n";
     cout << "H: Base 16 (Hex) to letters.\n";
-    //std::cout << "B64: Base 64 to letters.\n";
+    //TODO std::cout << "B64: Base 64 to letters.\n";
 
     string input;
     cin >> input;
